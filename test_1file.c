@@ -1,12 +1,13 @@
-#include "get_next_line.h"
+#include "../get_next_line.h"
 #include <stdio.h>
+#include <fcntl.h>
 
 int		main(void)
 {
 	char	*line = NULL;
 	int		fd;
 
-	if ((fd = open("./input1.txt", O_RDONLY)) == 1)
+	if ((fd = open("tests/input1.txt", O_RDONLY)) == 1)
 		printf("file open error\n");
 	else
 		printf("fd of input1.txt is:%d\n", fd);

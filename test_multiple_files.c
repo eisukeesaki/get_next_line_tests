@@ -1,5 +1,6 @@
-#include "get_next_line.h"
+#include "../get_next_line.h"
 #include <stdio.h>
+#include <fcntl.h>
 
 int		main(void)
 {
@@ -8,7 +9,7 @@ int		main(void)
 	int		fd2;
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< fd1
-	if ((fd1 = open("./input1.txt", O_RDONLY)) == 1)
+	if ((fd1 = open("tests/input1.txt", O_RDONLY)) == 1)
 	// if ((fd1 = open(1, O_RDONLY)) == 1) // read from stdin
 		printf("file open error\n");
 	else
@@ -16,7 +17,7 @@ int		main(void)
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> fd1
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< fd2
-	if ((fd2 = open("./input2.txt", O_RDONLY)) == 1)
+	if ((fd2 = open("tests/input2.txt", O_RDONLY)) == 1)
 		printf("file open error\n");
 	else
 		printf("fd of input2.txt is:%d\n", fd2);
