@@ -2,19 +2,19 @@
 - make libft
 
 - test reading 1 file
-gcc libft/libft.a get_next_line.c tests/test_1file.c
+gcc -Wall -Wextra -Werror libft/libft.a get_next_line.c tests/test_1file.c
 execute program
 
 - test reading from multiple (2) files
-gcc libft/libft.a get_next_line.c tests/test_multiple_files.c
+gcc -Wall -Wextra -Werror libft/libft.a get_next_line.c tests/test_multiple_files.c
 execute program
 
 - test reading a blank file
-gcc libft/libft.a get_next_line.c tests/test_blankfile.c
+gcc -Wall -Wextra -Werror libft/libft.a get_next_line.c tests/test_blankfile.c
 execute program
 
 - test reading from stdout
-gcc libft/libft.a get_next_line.c tests/test_stdout.c
+gcc -Wall -Wextra -Werror libft/libft.a get_next_line.c tests/test_stdout.c
 execute program
 <type something to read>
 <type something to read>
@@ -24,7 +24,7 @@ execute program
 ^D
 
 - test leaks
-gcc libft/libft.a get_next_line.c tests/test_leaks_mlfiles.c
+gcc -Wall -Wextra -Werror libft/libft.a get_next_line.c tests/test_leaks_mlfiles.c
 execute program
 open new shell
 leaks a.out
