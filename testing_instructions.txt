@@ -1,0 +1,30 @@
+- make sure that test repo is cloned to ...<gnldir>/tests
+- make libft
+
+- test reading 1 file
+gcc libft/libft.a get_next_line.c tests/test_1file.c
+execute program
+
+- test reading from multiple (2) files
+gcc libft/libft.a get_next_line.c tests/test_multiple_files.c
+execute program
+
+- test reading a blank file
+gcc libft/libft.a get_next_line.c tests/test_blankfile.c
+execute program
+
+- test reading from stdout
+gcc libft/libft.a get_next_line.c tests/test_stdout.c
+execute program
+<type something to read>
+<type something to read>
+<type something to read>
+^D
+^D
+^D
+
+- test leaks
+gcc libft/libft.a get_next_line.c tests/test_leaks_mlfiles.c
+execute program
+open new shell
+leaks a.out
